@@ -1,4 +1,5 @@
 import React from 'react';
+import Form from '../Form/form.js';
 
 export default class App extends React.Component {
   constructor(props) {
@@ -13,6 +14,7 @@ export default class App extends React.Component {
     return (
       <div>
         <h1>StashPoint Search</h1>
+        <Form />
       </div>
     );
   }
