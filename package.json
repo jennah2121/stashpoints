@@ -1,0 +1,53 @@
+{
+  "name": "stashpoints",
+  "version": "1.0.0",
+  "description": "A web app to help users find places to store their belongings. Queries the CityStasher API",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "start": "parcel public/index.html",
+    "build": "parcel build index.html --public-url ./"
+  },
+ "pre-commit": [
+    "test"
+ ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jennah2121/stashpoints.git"
+  },
+  "keywords": [
+    "StashPoints",
+    "react",
+    "parcel",
+    "cityStasher",
+    "jest"
+  ],
+  "author": "jennah2121",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jennah2121/stashpoints/issues"
+  },
+  "homepage": "https://github.com/jennah2121/stashpoints#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^8.2.5",
+    "babel-jest": "^23.2.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "eslint": "^5.0.1",
+    "eslint-config-recommended": "^3.0.0",
+    "eslint-plugin-react": "^7.10.0",
+    "fetch-mock": "^6.5.0",
+    "jest": "^23.3.0",
+    "parcel-bundler": "^1.9.4",
+    "pre-commit": "^1.2.2",
+    "react-testing-library": "^4.1.2"
+  },
+  "dependencies": {
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "styled-components": "^3.3.3"
+  }
+}
