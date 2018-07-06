@@ -1,16 +1,16 @@
 import React from 'react';
 import Form from '../Form/form.js';
+import { getStashpoints } from '../utils/getStashpoints.js';
 
 export default class App extends React.Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      stashPoints: [],
+      stashPoints: '',
       city: '',
       hotel: false,
-      tourist_information_centre: false,
-      queryParams: {}
+      tourist_information_centre: false
     };
   }
 
@@ -20,7 +20,14 @@ export default class App extends React.Component {
    */
   handleSubmit = event => {
     event.preventDefault();
-    console.log(this.state);
+    getStashpoints(this.state).then(data => {
+      this.setState({
+        stashPoints: data,
+        city: '',
+        hotel: false,
+        tourist_information_centre: false
+      });
+    });
   };
 
   /**
