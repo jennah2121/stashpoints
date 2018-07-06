@@ -9,9 +9,9 @@
     "start": "parcel public/index.html",
     "build": "parcel build index.html --public-url ./"
   },
- "pre-commit": [
+  "pre-commit": [
     "test"
- ],
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jennah2121/stashpoints.git"
