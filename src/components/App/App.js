@@ -53,6 +53,13 @@ export default class App extends React.Component {
     });
   };
 
+  newSearch = event => {
+    event.preventDefault();
+    this.setState({
+      formSubmitted: false
+    });
+  };
+
   render() {
     const { stashPoints, formSubmitted } = this.state;
     return (
@@ -66,7 +73,10 @@ export default class App extends React.Component {
           />
         ) : Array.isArray(stashPoints) ? (
           stashPoints.length > 0 ? (
-            <CardContainer stashPoints={stashPoints} />
+            <CardContainer
+              stashPoints={stashPoints}
+              newSearch={this.newSearch}
+            />
           ) : (
             <p>Sorry no results</p>
           )

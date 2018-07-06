@@ -10,12 +10,13 @@ const StyledUl = styled.ul`
   padding: 1rem 1.4rem;
 `;
 
-const CardContainer = ({ stashPoints }) => {
+const CardContainer = ({ stashPoints, newSearch }) => {
   return (
     <StyledUl>
       {stashPoints.map(stashPoint => (
         <Card key={stashPoint.id} {...stashPoint} />
       ))}
+      <button onClick={newSearch}>New Search</button>
     </StyledUl>
   );
 };
