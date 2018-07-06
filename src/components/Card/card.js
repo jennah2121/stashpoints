@@ -26,6 +26,14 @@ const Card = ({ stashPoint }) => {
       <p>
         Address: {stashPoint.address}, {stashPoint.postal_code}
       </p>
+      <p>
+        First Day Price: {stashPoint.pricing_structure.first_day_cost},{' '}
+        {stashPoint.pricing_structure.ccy}
+      </p>
+      <p>
+        Extra Day Price: {stashPoint.pricing_structure.extra_day_cost},{' '}
+        {stashPoint.pricing_structure.ccy}
+      </p>
     </StyledLi>
   );
 };
