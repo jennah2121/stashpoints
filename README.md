@@ -2,7 +2,7 @@
 
 Stashpoints is a react web app that helps users to find places where they can store their belongings. This is achieved by querying the [CityStasher API](https://shapelabs-uk.github.io/citystasher-api-docs/#introduction)
 
-### **View the project here:** [stashpointsearch.netlify.com](stashpointsearch.netlify.com)
+### **View the project here:** [https://stashpointsearch.netlify.com/](https://stashpointsearch.netlify.com/)
 
 ### How to run locally
 
