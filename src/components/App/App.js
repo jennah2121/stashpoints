@@ -2,6 +2,13 @@ import React from 'react';
 import Form from '../Form/form.js';
 import { getStashpoints } from '../utils/getStashpoints.js';
 import Card from '../Card/card.js';
+import styled from 'styled-components';
+
+const AppStyle = styled.div`
+  width: 100%;
+  height: 100%;
+  text-align: center;
+`;
 
 export default class App extends React.Component {
   constructor(props) {
@@ -49,7 +56,7 @@ export default class App extends React.Component {
   render() {
     const { stashPoints, formSubmitted } = this.state;
     return (
-      <div>
+      <AppStyle>
         <h1>StashPoint Search</h1>
         {!formSubmitted ? (
           <Form
@@ -66,7 +73,7 @@ export default class App extends React.Component {
         ) : (
           <p>Loading...</p>
         )}
-      </div>
+      </AppStyle>
     );
   }
 }
