@@ -14,7 +14,7 @@ const CardContainer = ({ stashPoints }) => {
   return (
     <StyledUl>
       {stashPoints.map(stashPoint => (
-        <Card key={stashPoint.id} stashPoint={stashPoint} />
+        <Card key={stashPoint.id} {...stashPoint} />
       ))}
     </StyledUl>
   );

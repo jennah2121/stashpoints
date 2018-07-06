@@ -18,21 +18,21 @@ const StyledImg = styled.img`
   width: 100%;
 `;
 
-const Card = ({ stashPoint }) => {
+const Card = ({ name, photos, address, postal_code, pricing_structure }) => {
   return (
     <StyledLi>
-      <p>{stashPoint.name}</p>
-      <StyledImg src={stashPoint.photos[0]} alt={stashPoint.name} />
+      <p>{name}</p>
+      <StyledImg src={photos[0]} alt={name} />
       <p>
-        Address: {stashPoint.address}, {stashPoint.postal_code}
+        Address: {address}, {postal_code}
       </p>
       <p>
-        First Day Price: {stashPoint.pricing_structure.first_day_cost},{' '}
-        {stashPoint.pricing_structure.ccy}
+        First Day Price: {pricing_structure.first_day_cost},{' '}
+        {pricing_structure.ccy}
       </p>
       <p>
-        Extra Day Price: {stashPoint.pricing_structure.extra_day_cost},{' '}
-        {stashPoint.pricing_structure.ccy}
+        Extra Day Price: {pricing_structure.extra_day_cost},{' '}
+        {pricing_structure.ccy}
       </p>
     </StyledLi>
   );
