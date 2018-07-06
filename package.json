@@ -7,7 +7,7 @@
     "test": "jest",
     "test:coverage": "jest --coverage",
     "start": "parcel public/index.html",
-    "build": "parcel build index.html --public-url ./"
+    "build": "parcel build public/index.html --public-url ./"
   },
   "pre-commit": [
     "test"
