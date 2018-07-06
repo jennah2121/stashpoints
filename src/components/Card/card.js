@@ -1,13 +1,8 @@
 import React from 'react';
+import styled from 'styled-components';
 
-const Card = ({ stashPoints }) => {
-  return (
-    <ul>
-      {stashPoints.map(stashPoint => (
-        <li key={stashPoint.id}>{stashPoint.name}</li>
-      ))}
-    </ul>
-  );
+const Card = ({ stashPoint }) => {
+  return <li>{stashPoint.name}</li>;
 };
 
 export default Card;

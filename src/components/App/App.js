@@ -1,8 +1,8 @@
 import React from 'react';
 import Form from '../Form/form.js';
 import { getStashpoints } from '../utils/getStashpoints.js';
-import Card from '../Card/card.js';
 import styled from 'styled-components';
+import CardContainer from '../CardContainer/CardContainer.js';
 
 const AppStyle = styled.div`
   width: 100%;
@@ -66,7 +66,7 @@ export default class App extends React.Component {
           />
         ) : Array.isArray(stashPoints) ? (
           stashPoints.length > 0 ? (
-            <Card stashPoints={stashPoints} />
+            <CardContainer stashPoints={stashPoints} />
           ) : (
             <p>Sorry no results</p>
           )
