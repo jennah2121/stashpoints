@@ -71,16 +71,6 @@ A **rough** design of the project:
 #### *All views:*
 ![Results Page](https://user-images.githubusercontent.com/25872585/42390381-96032fc4-8143-11e8-8784-fe0a44bc9ba9.png)
 
-#### *Main Page:*
-![Main Page](https://user-images.githubusercontent.com/25872585/42390153-f52c036e-8142-11e8-8977-012a03382730.png)
-
-
-#### *Results Page:*
-![Results Page](https://user-images.githubusercontent.com/25872585/42390157-f8900384-8142-11e8-9ae2-ef7ee9630adc.png)
-
-#### *Detailed view page:*
-![Results Page](https://user-images.githubusercontent.com/25872585/42390160-fac2954a-8142-11e8-99fc-45ab1978c91f.png)
-
 ___
 
 ### If I had more time...
